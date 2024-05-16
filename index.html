@@ -1352,7 +1352,16 @@
     font-size: 18px;
   }
 </style>
+<script>
+  const faqQuestions = document.querySelectorAll('.faq-question');
 
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+    });
+  });
+</script>
 		<!-- footer-copyright start -->
 		<footer  class="footer-copyright">
 			<div class="container">
