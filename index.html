@@ -1291,72 +1291,61 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 					
 <!--FAQ section starts -->
- <div class="faq-container">
-	<h1>Frequently Asked Questions</h1>
-	<div class="faq">
-	  <button class="faq-question">Question 1?</button>
-	  <div class="faq-answer">Answer 1.</div>
-	</div>
-	<div class="faq">
-	  <button class="faq-question">Question 2?</button>
-	  <div class="faq-answer">Answer 2.</div>
-	</div>
-	<div class="faq">
-	  <button class="faq-question">Question 3?</button>
-	  <div class="faq-answer">Answer 3.</div>
-	</div>
+<div class="faq-container">
+  <h1 style="text-align: center;">Frequently Asked Questions</h1>
+  <div class="faq">
+    <button class="faq-question">Question 1?</button>
+    <div class="faq-answer">Answer 1.</div>
   </div>
-  
-  <style>
-	.faq-container {
-	  width: 100%;
-	  max-width: 600px;
-	  margin: 0 auto;
-	}
-  
-	.faq {
-	  margin-bottom: 20px;
-	}
-  
-	.faq-question {
-	  background-color: #eee;
-	  padding: 10px;
-	  border: none;
-	  width: 100%;
-	  cursor: pointer;
-	}
-  
-	.faq-answer {
-	  padding: 10px;
-	  border: none;
-	  background-color: #ddd;
-	  display: none;
-	}
-  </style>
-  
-  <script>
-	const faqQuestions = document.querySelectorAll('.faq-question');
-  
-	faqQuestions.forEach(question => {
-	  question.addEventListener('click', () => {
-		const answer = question.nextElementSibling;
-		answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
-	  });
-	});
-  </script>
+  <div class="faq">
+    <button class="faq-question">Question 2?</button>
+    <div class="faq-answer">Answer 2.</div>
+  </div>
+  <div class="faq">
+    <button class="faq-question">Question 3?</button>
+    <div class="faq-answer">Answer 3.</div>
+  </div>
+</div>
+
+<style>
+  .faq-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .faq {
+    margin-bottom: 20px;
+  }
+
+  .faq-question {
+    background-color: #eee;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .faq-answer {
+    padding: 20px;
+    border: none;
+    background-color: #ddd;
+    display: none;
+    font-size: 24px;
+  }
+</style>
+
 <script>
-  $(document).ready(function() {
-    $('.faq-toggle').click(function() {
-      $(this).next('.faq-content').slideToggle();
-      if ($(this).find('.arrow').text() === '+') {
-        $(this).find('.arrow').text('-');
-      } else {
-        $(this).find('.arrow').text('+');
-      }
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
     });
   });
 </script>
-
 
 		
 		<!--subscribe start-->
