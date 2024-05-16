@@ -1291,34 +1291,59 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 					
 <!--FAQ section starts -->
-<section id="faq" class="testemonial">
-  <div class="container">
-    <div class="gallary-header text-center">
-      <h2>
-        FAQs
-      </h2>
-      <p>
-        You might want to ...
-      </p>
-    </div>
-    <!--/.gallery-header-->
-    <div class="owl-carousel owl-theme" id="testemonial-carousel">
-      <div class="faq-item">
-        <button class="faq-toggle">Question 1 <span class="arrow">+</span></button>
-        <div class="faq-content">
-          <p>Answer 1</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-toggle">Question 2 <span class="arrow">+</span></button>
-        <div class="faq-content">
-          <p>Answer 2</p>
-        </div>
-      </div>
-    </div>
+ <div class="faq-container">
+	<h1>Frequently Asked Questions</h1>
+	<div class="faq">
+	  <button class="faq-question">Question 1?</button>
+	  <div class="faq-answer">Answer 1.</div>
+	</div>
+	<div class="faq">
+	  <button class="faq-question">Question 2?</button>
+	  <div class="faq-answer">Answer 2.</div>
+	</div>
+	<div class="faq">
+	  <button class="faq-question">Question 3?</button>
+	  <div class="faq-answer">Answer 3.</div>
+	</div>
   </div>
-</div>
-
+  
+  <style>
+	.faq-container {
+	  width: 100%;
+	  max-width: 600px;
+	  margin: 0 auto;
+	}
+  
+	.faq {
+	  margin-bottom: 20px;
+	}
+  
+	.faq-question {
+	  background-color: #eee;
+	  padding: 10px;
+	  border: none;
+	  width: 100%;
+	  cursor: pointer;
+	}
+  
+	.faq-answer {
+	  padding: 10px;
+	  border: none;
+	  background-color: #ddd;
+	  display: none;
+	}
+  </style>
+  
+  <script>
+	const faqQuestions = document.querySelectorAll('.faq-question');
+  
+	faqQuestions.forEach(question => {
+	  question.addEventListener('click', () => {
+		const answer = question.nextElementSibling;
+		answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+	  });
+	});
+  </script>
 <script>
   $(document).ready(function() {
     $('.faq-toggle').click(function() {
