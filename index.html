@@ -1435,15 +1435,12 @@
   }
 </style>
 <script>
-  const faqQuestions = document.querySelectorAll('.faq-question');
-
-  faqQuestions.forEach(question => {
-    question.addEventListener('click', () => {
-      const answer = question.nextElementSibling;
-      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+    $(document).ready(function() {
+      $('.faq-question').click(function() {
+        $(this).next('.faq-answer').slideToggle();
+      });
     });
-  });
-</script>
+  </script>
 		<!-- footer-copyright start -->
 		<footer  class="footer-copyright">
 			<div class="container">
