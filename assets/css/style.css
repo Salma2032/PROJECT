@@ -304,7 +304,7 @@ html,body{
     justify-content: center;
     align-items: center;
 	position: relative;
-	background: url(../../assets/images/home/Untitled video - Made with Clipchamp.gif)no-repeat;
+	background: url(../../assets/images/home/Untitled video - Made with Clipchamp.gif) repeat ;
 	background-size: cover;
 	background-position: center;
 	min-height: 1000px;
@@ -316,7 +316,7 @@ html,body{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,122,207,.4);
+	
 }
 
 /*about-us-content*/
