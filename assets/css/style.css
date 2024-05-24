@@ -307,7 +307,7 @@ html,body{
 	background: url(../../assets/images/home/vid.gif) repeat ;
 	background-size: cover;
 	background-position: center;
-	min-height: 1000px;
+	min-height: 700px;
 }
 .about-us:before{
 	position: absolute;
