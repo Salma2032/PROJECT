@@ -277,7 +277,9 @@ html,body{
   overflow: hidden;
 }
 
-.about-us video {
+
+
+.lazyload {
   position: absolute;
   top: 0;
   left: 0;
