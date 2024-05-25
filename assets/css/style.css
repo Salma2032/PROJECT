@@ -277,8 +277,6 @@ html,body{
   overflow: hidden;
 }
 
-
-
 .lazyload {
   position: absolute;
   top: 0;
@@ -290,19 +288,19 @@ html,body{
 
 /*about-us-content*/
 .about-us-content{
-	margin: -175px 0 0 0;
+  margin: -175px 0 0 0;
 }
 .about-us h2 {
-	color:#fff;	
-	font-size:84px;
-	text-transform: inherit;
-	max-width: 800px;
-	font-weight: 600;
-	line-height: 1.22;
+  color:#fff;	
+  font-size:84px;
+  text-transform: inherit;
+  max-width: 800px;
+  font-weight: 600;
+  line-height: 1.22;
 }
 .about-us h2 span{
-	color:#2bdab5;
-	margin-top: -11px;
+  color:#2bdab5;
+  margin-top: -11px;
 }
 .about-btn {
     margin-top: 39px;
