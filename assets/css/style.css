@@ -291,13 +291,17 @@ html,body{
   margin: -175px 0 0 0;
 }
 .about-us h2 {
-  color:#fff;	
-  font-size:84px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 48px;
   text-transform: inherit;
-  max-width: 800px;
   font-weight: 600;
   line-height: 1.22;
 }
+
 .about-us h2 span{
   color:#2bdab5;
   margin-top: -11px;
