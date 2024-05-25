@@ -271,24 +271,19 @@ html,body{
 /*-------------------------------------
 		3. 	About
 --------------------------------------*/
-.about-us{
-	display: flex;
-    justify-content: center;
-    align-items: center;
-	position: relative;
-	background: url(../../assets/images/home/VID.mp4) repeat ;
-	background-size: cover;
-	background-position: center;
-	min-height: 700px;
+.about-us {
+  position: relative;
+  min-height: 700px;
+  overflow: hidden;
 }
-.about-us:before{
-	position: absolute;
-	content: "";
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	
+
+.about-us video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*about-us-content*/
